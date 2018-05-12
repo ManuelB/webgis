@@ -1,0 +1,16 @@
+<mvc:View controllerName="incentergy.webgis.controller.DeutscherWetterDienst" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:ol="incentergy.ol" xmlns:layer="incentergy.ol.layer" xmlns:source="incentergy.ol.source"
+	xmlns:interaction="incentergy.ol.interaction">
+	<ol:Map id="map" center="1152747.3744924355, 6585240.978424183" zoom="6">
+		<ol:interactions>
+			<interaction:Select select="onSelect"/>
+		</ol:interactions>
+		<layer:Tile>
+ 			<source:BingMaps key="AuUSWt9mS7s6qZ1Ms9WHWO-HwRZekerD3U8j06cEFA-UVHAXrrC34K9a_iHDhzg8"></source:BingMaps>
+ 		</layer:Tile>
+		<layer:Vector>
+			<source:Vector id="vectorSource"
+				url="https://maps.dwd.de/geoserver/dwd/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=dwd:Warnungen_Gemeinden_vereinigt&amp;maxFeatures=50&amp;outputFormat=application%2Fjson&amp;"></source:Vector>
+		</layer:Vector>
+	</ol:Map>
+</mvc:View>

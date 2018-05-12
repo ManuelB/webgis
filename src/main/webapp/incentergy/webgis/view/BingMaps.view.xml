@@ -1,0 +1,7 @@
+ <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:ol="incentergy.ol" xmlns:layer="incentergy.ol.layer" xmlns:source="incentergy.ol.source">
+ 	<ol:Map zoom="4" center="-10675330.907033112, 4351040.003037305">
+ 		<layer:Tile>
+ 			<source:BingMaps key="AuUSWt9mS7s6qZ1Ms9WHWO-HwRZekerD3U8j06cEFA-UVHAXrrC34K9a_iHDhzg8"></source:BingMaps>
+ 		</layer:Tile>
+ 	</ol:Map>
+</mvc:View>

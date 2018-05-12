@@ -1,0 +1,145 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "webgis",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_bluecrystal"]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "incentergy.webgis.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "incentergy.webgis.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "incentergy.webgis.view",
+				"controlAggregation": "pages",
+				"controlId": "navContainer",
+				"clearControlAggregation": false,
+                "homeRoute": "DeutscherWetterDienst"
+			},
+			"targets": {
+				"DeutscherWetterDienst": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "DeutscherWetterDienst",
+					"title": "DeutscherWetterDienst Example"
+				},
+				"ThunderForest": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "ThunderForest",
+					"title": "ThunderForest OSM Example"
+				},
+				"WKTFeatures": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "WKTFeatures",
+					"title": "WKT Features Example"
+				},
+				"BingMaps": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "BingMaps",
+					"title": "BingMaps Example"
+				},
+				"LineStrings": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "LineStrings",
+					"title": "LineStrings Example"
+				},
+				"SelectCountry": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "SelectCountry",
+					"title": "SelectCountry Example"
+				}
+			},
+			"routes": [{
+				"name": "DeutscherWetterDienst",
+				"pattern": "",
+				"description": "Weather with WFS for germany by",
+				"target": ["DeutscherWetterDienst"]
+			}, {
+				"name": "WKTFeatures",
+				"pattern": "WKTFeatures",
+				"description": "Showing",
+				"target": ["WKTFeatures"]
+			}, {
+				"name": "ThunderForest",
+				"pattern": "ThunderForest",
+				"description": "Loading OpenStreetMap data via",
+				"target": ["ThunderForest"]
+			}, {
+				"name": "BingMaps",
+				"pattern": "BingMaps",
+				"description": "Arieal with Roads from",
+				"target": ["BingMaps"]
+			}, {
+				"name": "LineStrings",
+				"pattern": "LineStrings",
+				"description": "WKT styled",
+				"target": ["LineStrings"]
+			}, {
+				"name": "SelectCountry",
+				"pattern": "SelectCountry",
+				"description": "Weather with WFS for germany by",
+				"target": ["SelectCountry"]
+			}]
+		}
+	}
+}

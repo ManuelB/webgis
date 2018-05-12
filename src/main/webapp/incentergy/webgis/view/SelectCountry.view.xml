@@ -1,0 +1,14 @@
+  <mvc:View controllerName="incentergy.webgis.controller.SelectCountry" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:ol="incentergy.ol" xmlns:layer="incentergy.ol.layer" xmlns:source="incentergy.ol.source" xmlns:interaction="incentergy.ol.interaction">
+ 	<ol:Map id="map">
+ 		<ol:interactions>
+ 			<interaction:Select select="onSelect" />
+ 		</ol:interactions>
+ 		<layer:Tile>
+ 			<source:BingMaps key="AuUSWt9mS7s6qZ1Ms9WHWO-HwRZekerD3U8j06cEFA-UVHAXrrC34K9a_iHDhzg8"></source:BingMaps>
+ 		</layer:Tile>
+ 		<layer:Vector>
+ 			<source:Vector id="vectorSource"  url="data/countries.geojson?">
+            </source:Vector>
+ 		</layer:Vector>
+ 	</ol:Map>
+</mvc:View>

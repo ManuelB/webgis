@@ -1,0 +1,7 @@
+ <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:ol="incentergy.ol" xmlns:layer="incentergy.ol.layer" xmlns:source="incentergy.ol.source">
+ 	<ol:Map center="1152747.3744924355, 6585240.978424183" zoom="5">
+ 		<layer:Tile>
+ 			<source:OSM url="{= 'https://{a-c}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=e5da76567a144d2888f7669cfcfc20b6'}"></source:OSM>
+ 		</layer:Tile>
+ 	</ol:Map>
+</mvc:View>

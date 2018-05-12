@@ -1,0 +1,18 @@
+<mvc:View controllerName="incentergy.webgis.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<SplitApp id="splitApp">
+		<masterPages>
+			<Page id="menuPage" title="WebGIS">
+				<List id="list" items="{RoutesModel>/}" itemPress="onItemPress">
+					<ObjectListItem title="{RoutesModel>name}" intro ="{RoutesModel>description}" type="Active"></ObjectListItem>
+				</List>
+			</Page>
+		</masterPages>
+		<detailPages>
+			<Page id="detailPage" title="openui5-ol Examples">
+				<content>
+					<NavContainer id="navContainer"></NavContainer>
+				</content>
+			</Page>
+		</detailPages>
+	</SplitApp>
+</mvc:View>
