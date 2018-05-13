@@ -108,11 +108,11 @@
 					"viewName": "SelectCountry",
 					"title": "SelectCountry Example"
 				},
-				"SentinetHub": {
+				"SentinelHub": {
 					"viewType": "XML",
 					"transition": "slide",
-					"viewName": "SentinetHub",
-					"title": "SentinetHub Example"
+					"viewName": "SentinelHub",
+					"title": "SentinelHub Example"
 					
 				}
 			},
@@ -147,10 +147,10 @@
 				"description": "Weather with WFS for germany by",
 				"target": ["SelectCountry"]
 			}, {
-				"name": "SentinetHub",
-				"pattern": "SentinetHub",
-				"description": "NDVI for agricultture from SentinetHub",
-				"target": ["SentinetHub"]
+				"name": "SentinelHub",
+				"pattern": "SentinelHub",
+				"description": "NDVI for agricultture from",
+				"target": ["SentinelHub"]
 			}]
 		}
 	}
