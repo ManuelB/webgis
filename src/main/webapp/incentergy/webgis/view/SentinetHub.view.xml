@@ -1,6 +1,6 @@
  <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:ol="incentergy.ol" xmlns:layer="incentergy.ol.layer" xmlns:source="incentergy.ol.source">
  	<ol:Map center="1268382.4918752254, 6150465.043208938" zoom="16">
- 		<layer:Tile>
+ 		<layer:Tile id="sentinelNdviLayer">
  			<source:TileWMS url="https://services.sentinel-hub.com/ogc/wms/49fa0d72-0728-4791-bb9d-0149fbe5ffb0" params="&quot;FORMAT&quot;: &quot;image/png&quot;, &quot;VERSION&quot;: &quot;1.1.1&quot;, &quot;tiled&quot;: true, &quot;STYLES&quot;: &quot;&quot;, &quot;LAYERS&quot;: &quot;NDVI&quot;"></source:TileWMS>
  		</layer:Tile>
  		<layer:Vector>
